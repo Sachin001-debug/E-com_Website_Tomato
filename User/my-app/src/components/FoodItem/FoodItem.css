@@ -1,0 +1,147 @@
+.food-item{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.62);
+    transition: 0.3s;
+    animation: fadeIn 1s;
+    cursor: pointer;
+}
+.food-item-image {
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.food-item-info {
+    padding: 22px;
+}
+.food-item-name-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.food-item-name-rating p{
+    font-weight: 500;
+    font-size: 20px;
+
+}
+.food-item-name-rating img {
+    width: 80px;
+}
+.food-item-desc {
+    color: #676767;
+    font-size: 15px;
+}
+.food-item-price {
+    color: tomato;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 10px 0px;
+}
+.food-item-image-container{
+    position: relative;
+}
+.food-item-image-container .add{
+    width: 35px;
+    bottom: 15px;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50%;
+    right: 15px;
+}
+.food-item-counter{
+    position: absolute;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px;
+    bottom: 15px;
+    border-radius: 50px;
+    background-color: white;
+}
+.food-item-counter img{
+    width: 30px;
+}
+/* Medium screens - tablets */
+@media (max-width: 1050px) {
+  .food-item {
+    width: 48%; /* 2 items per row if using flex/grid container */
+  }
+  .food-item-name-rating p {
+    font-size: 18px;
+  }
+  .food-item-name-rating img {
+    width: 70px;
+  }
+  .food-item-desc {
+    font-size: 14px;
+  }
+  .food-item-price {
+    font-size: 22px;
+  }
+  .food-item-image-container .add,
+  .food-item-counter img {
+    width: 30px;
+  }
+  .food-item-counter {
+    gap: 8px;
+    padding: 5px;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 900px) {
+  .food-item {
+    width: 100%; /* single column */
+  }
+  .food-item-name-rating p {
+    font-size: 16px;
+  }
+  .food-item-name-rating img {
+    width: 60px;
+  }
+  .food-item-desc {
+    font-size: 13px;
+  }
+  .food-item-price {
+    font-size: 20px;
+  }
+  .food-item-image-container .add,
+  .food-item-counter img {
+    width: 28px;
+  }
+  .food-item-counter {
+    gap: 6px;
+    padding: 4px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .food-item {
+    width: 100%;
+  }
+  .food-item-info {
+    padding: 15px;
+  }
+  .food-item-name-rating p {
+    font-size: 14px;
+  }
+  .food-item-name-rating img {
+    width: 50px;
+  }
+  .food-item-desc {
+    font-size: 12px;
+  }
+  .food-item-price {
+    font-size: 18px;
+  }
+  .food-item-image-container .add,
+  .food-item-counter img {
+    width: 25px;
+  }
+  .food-item-counter {
+    gap: 4px;
+    padding: 3px;
+  }
+}
