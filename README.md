@@ -1,5 +1,5 @@
 E-com Website (Tomato) is a full-stack e-commerce application built with the MERN stack (MongoDB, Express, React, Node.js).
---------------------(Still on progress)-----------------------
+(ON PROGRESS)
 
 Key Feature:-
 User Authentication (Register/Login)
